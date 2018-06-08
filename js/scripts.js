@@ -11,7 +11,11 @@ var convertedNumber = function(inputtedNumber) {
 }
   else {
     for (var i=inputtedNumber; i > 0; i--) {
-      if(i>=5){
+      if(i === 9){
+        arr.push("IX");
+        i-=8
+      }
+      else if(i>=5){
         arr.push("V");
         i -= 4
       }
@@ -42,8 +46,8 @@ var convertedNumber = function(inputtedNumber) {
 //       } else {
 //         arr.push("I")
 
-
-    return arr.join("");
+return arr
+    // return arr.join("");
   };
 
 
